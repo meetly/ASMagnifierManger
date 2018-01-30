@@ -30,6 +30,13 @@
     label.numberOfLines = 0;
     [self.view addSubview:label];
     
+    //放大倍数
+    [ASMagnifierManger sharedInstance].magnification = 3.0;
+    //放大镜为圆形
+    [ASMagnifierManger sharedInstance].magStyle = MagnifierStyleCircular;
+    //放大镜大小
+    [ASMagnifierManger sharedInstance].magnifierWidth = 100;
+    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
